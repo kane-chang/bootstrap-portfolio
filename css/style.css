@@ -1,0 +1,10 @@
+.custom-nav {
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+}
+
+.navbar-brand img {
+    width: 100px;
+}
+
