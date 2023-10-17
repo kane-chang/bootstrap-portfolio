@@ -21,3 +21,19 @@ h1 {
     }
   }
 
+.contact-links a {
+    text-decoration: none;
+    padding: 0px 10px;
+    color: #212529;
+}
+
+.mx-6 {
+    margin: 0 6.5%;
+    min-width: 420px;
+}
+
+.contact-links a:hover {
+    text-decoration: underline;
+    color: rgb(181, 144, 95);
+    transition: 0.5s;
+}

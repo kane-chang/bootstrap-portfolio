@@ -24,8 +24,7 @@
 <body>
 
     <!-- Nav bar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light custom-nav">
-
+    <nav class="navbar navbar-expand-lg navbar-light bg-light custom-nav " id="home">
         <!-- Brand logo  -->
         <a class="navbar-brand" href="#">
             <img src="images/kane-logo.png" alt="Kane's logo which are the initials 'K' and 'C'">
@@ -41,16 +40,16 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav nav-underline">
                 <li class="nav-item active">
-                    <a class="nav-link" href="#">HOME</span></a>
+                    <a class="nav-link" href="#home">HOME</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">ABOUT</a>
+                    <a class="nav-link" href="#about-section">ABOUT</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">WORK</a>
+                    <a class="nav-link" href="#work-section">WORK</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">CONTACT</a>
+                    <a class="nav-link" href="#contact-section">CONTACT</a>
                 </li>
             </ul>
         </div>
@@ -63,7 +62,8 @@
     <div class="jumbotron jumbotron-fluid name-header">
         <div class="container">
             <h1 class="display-4">KANG CHANG</h1>
-            <p class="lead text-end">Front-end software developer based in London, a philosophy graduate turned self-taught
+            <p class="lead text-end">Front-end software developer based in London, a philosophy graduate turned
+                self-taught
                 programmer.</p>
         </div>
     </div>
@@ -85,78 +85,89 @@
         </div> -->
 
         <!-- about me -->
-            <div class="card bg-dark text-white" id="about-section">
-                <img class="card-img" src="images/P1010142.JPG" alt="photo of Kane">
-                <div class="card-img-overlay">
-                    <h2 class="card-title text-dark about-text">About Me</h2>
-                    <p class="card-text text-dark about-text">I'm a user-centric front-end developer, with experience working alongside UX/UI
-                        designers and various stakeholders. I believe in the value of being a hybrid professional that can understand and
-                        communicate across the spectrum of design and development. I am passionate about building resilient, inclusive
-                        web designs with a focus on accessibility for diverse users.</p>
-                    <p class="card-text text-dark about-text">I am a big fan of boardgames, problem-solving and hold a deep love for learning.
-                    </p>
-                </div>
+        <div class="card bg-dark text-white mx-6" id="about-section">
+            <img class="card-img" src="images/P1010142.JPG" alt="photo of Kane">
+            <div class="card-img-overlay">
+                <h2 class="card-title text-dark about-text display-6">About Me</h2>
+                <p class="card-text text-dark about-text">I'm a user-centric front-end developer, with experience
+                    working alongside UX/UI
+                    designers and various stakeholders. I believe in the value of being a hybrid professional that can
+                    understand and
+                    communicate across the spectrum of design and development. I am passionate about building resilient,
+                    inclusive
+                    web designs with a focus on accessibility for diverse users.</p>
+                <p class="card-text text-dark about-text">I am a big fan of boardgames, problem-solving and hold a deep
+                    love for learning.
+                </p>
             </div>
+        </div>
         </div>
 
         <!-- portfolio container -->
-        <div class="container-fluid content" id="work-section">
-            <h2 class="sectionHeading">Work</h2>
+        <div class="container content py-5" id="work-section">
+            <h2 class="sectionHeading display-6">Work</h2>
             <div class="row work-projects">
-              <!-- Card 1 -->
-              <div class="cardContainer col-lg-4 col-md-4 col-sm-12">
-                <div class="card">
-                  <img src="https://placehold.co/600x400.png" class="card-img-top" alt="...">
-                  <div class="card-body">
-                    <h5 class="card-title">Project 1</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-                      content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                  </div>
+                <!-- Card 1 -->
+                <div class="cardContainer col-lg-4 col-md-4 col-sm-12">
+                    <div class="card">
+                        <img src="https://placehold.co/600x400.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Project 1</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's
+                                content.</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
                 </div>
-              </div>
-              <!-- End card 1 -->
-        
-              <!-- Card 2 -->
-              <div class="cardContainer col-lg-4 col-md-4 col-sm-12">
-                <div class="card">
-                  <img src="https://placehold.co/600x400.png" class="card-img-top" alt="...">
-                  <div class="card-body">
-                    <h5 class="card-title">Project 2</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-                      content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                  </div>
-                </div>
-              </div>
-              <!-- End card 2 -->
-        
-              <!-- Card 3 -->
-              <div class="cardContainer col-lg-4 col-md-4 col-sm-12">
-                <div class="card">
-                  <img src="https://placehold.co/600x400.png" class="card-img-top" alt="...">
-                  <div class="card-body">
-                    <h5 class="card-title">Project 3</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-                      content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                  </div>
-                </div>
-              </div>
-              <!-- End card 3 -->
+                <!-- End card 1 -->
 
-        <!-- contact -->
-        <section class="footer" id="contact-section">
-            <div class="container-fluid">
-                <h2>Contact Me</h2>
-                <div class="contact-container">
+                <!-- Card 2 -->
+                <div class="cardContainer col-lg-4 col-md-4 col-sm-12">
+                    <div class="card">
+                        <img src="https://placehold.co/600x400.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Project 2</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's
+                                content.</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- End card 2 -->
+
+                <!-- Card 3 -->
+                <div class="cardContainer col-lg-4 col-md-4 col-sm-12">
+                    <div class="card">
+                        <img src="https://placehold.co/600x400.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Project 3</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's
+                                content.</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- End card 3 -->
+    </main>
+    <!-- contact -->
+    <div class="container-fluid bg-light">
+        <div class="container">
+            <footer class="footer d-flex flex-wrap justify-content-between align-items-center pt-4" id="contact-section">
+                <h2 class="display-6">Contact Me</h2>
+                <span class="contact-container text-muted contact-links">
                     <a href="mailto:kane.chang.fl@gmail.com">Email</a>
                     <a href="https://github.com/kane-chang">Github</a>
                     <a href="https://www.linkedin.com/in/kane-chang/">LinkedIn</a>
-                </div>    
-            </div>
-        </section>
-    </main>
+                </span>
+            </footer>
+        </div>
+    </div>
+   
+
+
 
 
     <!-- Popper.js, then Bootstrap JS -->
